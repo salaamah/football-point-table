@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgb(37, 62, 77);
+    color: darkgrey;
+    margin-bottom: 10px;
+}
+.header a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: rgb(128, 208, 208);
+}

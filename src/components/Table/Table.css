@@ -1,0 +1,13 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse:separate;
+    border-style: double;
+    margin: auto;
+}
+table{
+    margin: auto;
+    margin-top: 10px;
+}
+th, td{
+    width: 10%;
+}

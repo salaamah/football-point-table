@@ -16,28 +16,33 @@ const Table = ({pointTable}) => {
     }
     rowData.forEach(row => row[0]++);
     const tableHeading = ['Rank','Teams','MP','W','D','L','GF','GA','GD','Pts'];
-    
     return (
-            <table>
-                <tbody>
+        <div>
+            {
+                pointTable[0].length > 0 &&
+                <table>
+                    <tr>
                     {
                         tableHeading.map(title =>{
                             return <th>{title}</th>
                         })
                     }
-                </tbody>
+                    </tr>
+                
                 {
                     rowData.map(row =>{
-                        return <tbody>
+                        return <tr>
                             {
                                 row.map(value =>{
                                     return <td>{value}</td>
                                 })
                             }
-                        </tbody>
+                        </tr>
                     })
                 }
-            </table>
+                </table>
+            }
+        </div>
     );
 };
 
